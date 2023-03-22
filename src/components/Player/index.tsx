@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import foramt from "date-fns/format";
 import ptBR from "date-fns/locale/pt-BR";
 
@@ -16,10 +17,12 @@ export function Player() {
       <div className={styles.emptyPlayer}>
         <strong>Selecione um podcast para ouvir</strong>
       </div>
-      <footer>
+      <footer className={styles.empty}>
         <div className={styles.progress}>
           <span>00:00</span>
-          <div  className={styles.emptySlider} />
+          <div className={styles.slider}>
+            <div  className={styles.emptySlider} />
+          </div>
           <span>00:00</span>
         </div>
 
